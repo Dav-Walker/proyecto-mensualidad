@@ -100,7 +100,7 @@ header a:visited {
     color: #fff;
 }   
 /* aaaaaaaaaaaaaaaaa---------------------------------- */
-section{
+.contenedor_about{
     display: flex;
     gap: 2rem;
     justify-content: center;
@@ -113,12 +113,77 @@ section{
 text-align: center;
 font-size: 25px;}
 
+/* Style carrusel-------------------------------------------------------------------- */
+.contenedor-carrusel {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.carrusel {
+    width: 800px;
+    height: auto;
+    overflow: hidden;
+
+}
+
+.carrusel ul {
+    display: flex;
+    width: 400%;
+    padding: 0;
+    animation: slide 16s infinite alternate ease-in-out;
+}
+
+.carrusel li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.carrusel li img {
+    width: 100%;
+}
+
+
+@keyframes slide {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+
+}
 
 
 
-
-
-/* Responsive NAV-Bar */
+/* Responsive NAV-Bar--------------------------------------------------------------------------*/
 .abrir-menu,
 .cerrar-menu {
     display: none;
