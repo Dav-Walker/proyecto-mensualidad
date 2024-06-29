@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="es-cl">
 
@@ -5,13 +7,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="cliente.css">
+  <link rel="stylesheet" href="{% static 'core/cliente.css' %}">
 </head>
 
 <body>
 
   <header>
-    <a href="cliente.html"><img class="logo" src="icon.jpg" alt=""></a>
+    <a href="cliente.html"><img class="logo" src="{% static 'core/icon.jpg' %}" alt=""></a>
     <button id="abrir" class="abrir-menu"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ic" viewBox="0 0 16 16">
       <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
     </svg></button>
@@ -52,23 +54,23 @@
         Ofrecemos un entorno enriquecedor donde los residentes pueden disfrutar de sus pasatiempos, 
         participar en actividades recreativas y disfrutar de la compañía de otros.</p>
     </div>
-    <img class="promotional_img" src="Banner-0.jpeg" alt="">
-
+    <img class="promotional_img" src="{% static 'core/Banner-0.jpeg' %}" alt="">
+    
   </section>
   <article class="contenedor-carrusel">
     <div class="carrusel">
       <ul>
         <li>
-          <img src="Banner-1.jpeg" alt="">
+          <img src="{% static 'core/Banner-1.jpeg' %}" alt="">
         </li>
         <li>
-          <img src="Banner-2.jpeg" alt="">
+          <img src="{% static 'core/Banner-2.jpeg' %}" alt="">
         </li>
         <li>
-          <img src="Banner-3.jpeg" alt="">
+          <img src="{% static 'core/Banner-3.jpeg' %}" alt="">
         </li>
         <li>
-          <img src="Banner-4.jpeg" alt="">
+          <img src="{% static 'core/Banner-4.jpeg' %}" alt="">
         </li>
         
       </ul>
