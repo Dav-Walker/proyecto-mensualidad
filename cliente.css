@@ -9,7 +9,8 @@ body {
     display: flex;
     row-gap: 3vh;
     flex-direction: column;
-    background-color: #ECFFE6;
+    
+    background: linear-gradient(180deg, #ECFFE6, #d1ffc4);
 
 }
 
@@ -80,7 +81,7 @@ header a:visited {
     margin: 0 15px;
 }
 .footer-links a:hover{
-    color: #fff5ce;
+    color: #005b08;
 }
 .footer img{
 
@@ -91,13 +92,14 @@ header a:visited {
 .footer img:hover{
     border: 2px solid #ff23eb;
     border-radius: 13px;
+    background-color: #260323;
      transition-duration: 0.5s;
 }
 .footer .footer-links a:not(:last-child):after {
     content: "|";
     margin-left: 17px;
     
-    color: #fff;
+    color: #00DC14;
 }   
 /* aaaaaaaaaaaaaaaaa---------------------------------- */
 .contenedor_about{
@@ -243,3 +245,4 @@ font-size: 25px;}
         color: #ecececec;
     }
 }
+
