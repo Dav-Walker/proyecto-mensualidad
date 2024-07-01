@@ -1,0 +1,49 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<section class="unete">
+    <h1 class="titulo">¡Cuida y celebra la vida en nuestro hogar <br>
+        Tu tranquilidad, nuestro compromiso!</h1>
+    <button class="btn-registro"><a href="#">Registrate aqui.</a></button>
+</section>
+<section class="contenedor_about">
+    <div class="about_us">
+        <p>En Villa Armonía, creemos que cada persona merece vivir sus
+            años dorados con dignidad, respeto y alegría. Nuestra misión es
+            proporcionar un ambiente acogedor y seguro donde nuestros residentes
+            se sientan como en casa, rodeados de cariño y atención personalizada.</p>
+        <br>
+        <p>Como comunidad sabemos que cada residente es único. Nos aseguramos de conocer sus necesidades
+            individuales ypreferencias, ofreciendoplanes de cuidado adaptados a cada persona.
+            Nuestro equipo está formado por profesionales altamente cualificados y en constante
+            capacitación para brindar el mejor cuidado posible.
+            Implementamos programas integrales que promueven la salud física, mental y emocional de
+            nuestros residentes, incluyendo actividades recreativas, terapias y nutrición equilibrada.
+            Ofrecemos un entorno enriquecedor donde los residentes pueden disfrutar de sus pasatiempos,
+            participar en actividades recreativas y disfrutar de la compañía de otros.</p>
+    </div>
+    <div class="carrusel">
+        <ul>
+            <li>
+                <img src="{% static 'img/Banner-0.jpeg' %}" alt="">
+            </li>
+            <li>
+                <img src="{% static 'img/Banner-1.jpeg' %}" alt="">
+            </li>
+            <li>
+                <img src="{% static 'img/Banner-2.jpeg' %}" alt="">
+            </li>
+            <li>
+                <img src="{% static 'img/Banner-3.jpeg' %}" alt="">
+            </li>
+            <li>
+                <img src="{% static 'img/Banner-4.jpeg' %}" alt="">
+            </li>
+
+        </ul>
+    </div>
+</section>
+
+{% endblock %}

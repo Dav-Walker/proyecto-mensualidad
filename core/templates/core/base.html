@@ -7,13 +7,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="{% static 'core/cliente.css' %}">
+  <link rel="stylesheet" href="{% static 'cliente.css' %}">
+
+  <script src="{% static 'responsive.js' %}"></script>
+  {% block head %}
+  {% endblock %}
 </head>
 
 <body>
 
   <header>
-    <a href="cliente.html"><img class="logo" src="{% static 'core/icon.jpg' %}" alt=""></a>
+    <a href="{% url 'home' %}"><img class="logo" src="{% static 'img/icon.jpg' %}" alt=""></a>
     <button id="abrir" class="abrir-menu"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ic" viewBox="0 0 16 16">
       <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
     </svg></button>
@@ -24,10 +28,8 @@
 
       <ul class="nav-list">
 
-        <li><a href="cliente.html">aaaaa</a></li>
-        <li><a href="#">Planes</a></li>
-        <li><a href="#">aaaaa</a></li>
-        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        <li><a href="#">Mi cuenta</a></li>
+        <li><a href="{% url 'login' %}"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
               class="nav-list  ic" viewBox="0 0 16 16">
               <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
               <path fill-rule="evenodd"
@@ -37,45 +39,10 @@
       </ul>
     </nav>
   </header>
-<p>
-  <section class="contenedor_about">
-    <div class="about_us">
-      <p>En Villa Armonía, creemos que cada persona merece vivir sus 
-         años dorados con dignidad, respeto y alegría. Nuestra misión es
-         proporcionar un ambiente acogedor y seguro donde nuestros residentes 
-          se sientan como en casa, rodeados de cariño y atención personalizada.</p>
-      <br>
-      <p>Como comunidad sabemos que cada residente es único. Nos aseguramos de conocer sus necesidades 
-        individuales ypreferencias, ofreciendoplanes de cuidado adaptados a cada persona. 
-        Nuestro equipo está formado por profesionales altamente cualificados y en constante 
-        capacitación para brindar el mejor cuidado posible.
-        Implementamos programas integrales que promueven la salud física, mental y emocional de 
-        nuestros residentes, incluyendo actividades recreativas, terapias y nutrición equilibrada. 
-        Ofrecemos un entorno enriquecedor donde los residentes pueden disfrutar de sus pasatiempos, 
-        participar en actividades recreativas y disfrutar de la compañía de otros.</p>
-    </div>
-    <img class="promotional_img" src="{% static 'core/Banner-0.jpeg' %}" alt="">
-    
-  </section>
-  <article class="contenedor-carrusel">
-    <div class="carrusel">
-      <ul>
-        <li>
-          <img src="{% static 'core/Banner-1.jpeg' %}" alt="">
-        </li>
-        <li>
-          <img src="{% static 'core/Banner-2.jpeg' %}" alt="">
-        </li>
-        <li>
-          <img src="{% static 'core/Banner-3.jpeg' %}" alt="">
-        </li>
-        <li>
-          <img src="{% static 'core/Banner-4.jpeg' %}" alt="">
-        </li>
-        
-      </ul>
-    </div>
-  </article>
+
+  {% block content %}
+  {% endblock %}
+
 
   <footer class="footer">
     <div class="social-icons">
@@ -97,23 +64,6 @@
         <a href="#">Contactos</a>
     </div>
     <p>&copy; 2024 VillaArmonia - Todos los derechos reservados.</p>
-</footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <script src="responsive.js"></script>
+  </footer>
 </body>
-
 </html>
