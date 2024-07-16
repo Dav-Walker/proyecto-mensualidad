@@ -1,0 +1,25 @@
+.login-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 60vh; /* Altura completa de la ventana */
+}
+.login-form {
+    width: 500px; /* Ancho del formulario, puedes ajustarlo según tus necesidades */
+    padding: 20px;
+    background-color: #f7f7f7; /* Color de fondo del formulario */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para el formulario */
+    border-radius: 5px; /* Bordes redondeados */
+}
+.boton-login {
+    width: 100%; /* Botón de ancho completo */
+    padding: 10px;
+    background-color: #00a20d; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.boton-login:hover {
+    background-color: #00DC14; /* Color del botón al pasar el cursor */
+}
