@@ -11,6 +11,38 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para el formulario */
     border-radius: 5px; /* Bordes redondeados */
 }
+.Login-form>label {
+    width: 50%;
+    justify-content: center;
+    align-items: left;
+}
+
+.Login-form>div {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+}
+
+div>label,
+div>input {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+div>input {
+    height: 2rem;
+    padding: 0px;
+    border: 1px #000000 solid;
+    border-radius: 10px;
+    outline: none;
+}
+
 .boton-login {
     width: 100%; /* Botón de ancho completo */
     padding: 10px;
@@ -22,4 +54,17 @@
 }
 .boton-login:hover {
     background-color: #00DC14; /* Color del botón al pasar el cursor */
+}
+
+#encabezado {
+    margin: 2%;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 5vh;
+    font-size: 3.5rem;
+    color: #002e0a;
+    font-family: "Concert One", sans-serif !important;
+    font-weight: 400;
+    margin-bottom: 19px;
 }
